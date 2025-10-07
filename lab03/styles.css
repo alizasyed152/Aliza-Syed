@@ -1,0 +1,179 @@
+/* ====== General Body ====== */
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #ffffff, #fcfccc, #ffffff); /* white → yellow → white diagonal ombre */
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+/* ====== Container ====== */
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* ====== Cards ====== */
+.card {
+  background: rgba(108, 176, 239, 0.9); /* light blue */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* ====== Card Titles ====== */
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* ====== Card Text ====== */
+.card-text {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* ====== Weather Boxes (priority sizing) ====== */
+.weather-box {
+  display: inline-block;
+  background: #1f2041; /* dark navy blue */
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff; /* white text */
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+  margin: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.weather-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 8px 18px rgba(0,0,0,0.5);
+}
+
+/* Priority sizes */
+.weather-temp { font-size: 1.6rem; padding: 18px; min-width: 160px; }
+.weather-feels { font-size: 1.4rem; padding: 16px; min-width: 140px; }
+.weather-desc { font-size: 1.2rem; padding: 14px; min-width: 130px; text-transform: capitalize; font-style: italic; color: #6cb0ef; }
+.weather-max, .weather-min { font-size: 1.1rem; padding: 12px; min-width: 120px; }
+.weather-humidity, .weather-wind { font-size: 1rem; padding: 10px; min-width: 110px; }
+.weather-sun, .weather-pressure { font-size: 0.95rem; padding: 8px; min-width: 100px; }
+
+/* City Name with typing effect */
+.weather-location {
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f2041;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #1f2041;
+  animation: typing 2s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* ====== Activity ====== */
+#activity {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f2041;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+  transition: transform 0.2s;
+}
+
+#activity.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== Buttons ====== */
+.btn-primary {
+  background: #1f2041;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ====== Weather Icons ====== */
+.card::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.weather-clear::before {
+  background-image: url('https://img.icons8.com/emoji/48/000000/sun-emoji.png');
+}
+.weather-clouds::before {
+  background-image: url('https://img.icons8.com/emoji/48/000000/cloud-emoji.png');
+}
+.weather-rain::before {
+  background-image: url('https://img.icons8.com/emoji/48/000000/cloud-with-rain-emoji.png');
+}
+.weather-snow::before {
+  background-image: url('https://img.icons8.com/emoji/48/000000/snowflake-emoji.png');
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 576px) {
+  .weather-box {
+    min-width: 90px;
+    font-size: 0.85rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .weather-location {
+    font-size: 1.4rem;
+  }
+}
