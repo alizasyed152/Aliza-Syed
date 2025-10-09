@@ -80,15 +80,14 @@ body {
 .weather-location {
   display: block;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #1f2041;
+  color: #ffffff;
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #1f2041;
+  border-right: 3px solid rgba(108, 176, 239, 0.9);;
   animation: typing 2s steps(30, end), blink 0.75s step-end infinite;
 }
 
