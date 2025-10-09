@@ -7,7 +7,6 @@ let lon = -73.69179;
 
 // ====== WEATHER ======
 async function getWeather(lat, lon) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${OWM_KEY}&units=imperial`;
   const response = await fetch(url);
   const data = await response.json();
   console.log("Weather data:", data);
