@@ -21,3 +21,15 @@ OpenWeatherMap API – https://openweathermap.org/api
 7) can you update the css to use this color pallette: https://coolors.co/1f2041-ffffff-fcfccc-6cb0ef-acadaf
 
 8) can you also add an image that represents the conditons
+
+9) okay and when the user chooses to use their location, where you display the city name should say the name of their location, not "your location"
+
+Cites:
+
+OpenWeatherMap API
+OpenWeatherMap. (2025). *Current Weather Data API*. Retrieved from https://openweathermap.org/api  
+
+Lewagon Bored API
+App Brewery. (2025). Bored API Documentation. Retrieved from https://bored-api.appbrewery.com/
+
+ChatGPT - https://chatgpt.com 
