@@ -1,0 +1,40 @@
+{
+  "menu": [
+    {
+      "name": "Chicken Alfredo with Mushrooms and Broccoli",
+      "description": "Tender grilled chicken tossed with fettuccine in a creamy Alfredo sauce, topped with sautéed mushrooms and fresh broccoli.",
+      "category": "Non-Vegetarian",
+      "cuisine": "Italian",
+      "image": "resources/img/broccoli-mushroom-alfredo.jpg",
+      "ingredients": ["Chicken", "Fettuccine", "Parmesan", "Mushrooms", "Broccoli", "Cream", "Garlic"],
+      "price": "$18.99"
+    },
+    {
+      "name": "Chicken Parmesan",
+      "description": "Crispy breaded chicken breast topped with marinara sauce and melted mozzarella, served over spaghetti.",
+      "category": "Non-Vegetarian",
+      "cuisine": "Italian",
+      "image": "resources/img/chicken-parm.jpg",
+      "ingredients": ["Chicken", "Mozzarella", "Marinara", "Spaghetti", "Basil"],
+      "price": "$19.49"
+    },
+    {
+      "name": "Chicken Piccata",
+      "description": "Pan-seared chicken breast with a tangy lemon-butter caper sauce, served with linguine.",
+      "category": "Non-Vegetarian",
+      "cuisine": "Italian",
+      "image": "resources/img/chicken-piccata.jpg",
+      "ingredients": ["Chicken", "Lemon", "Butter", "Capers", "Parsley", "Linguine"],
+      "price": "$17.99"
+    },
+    {
+      "name": "Three Cheese Lasagna",
+      "description": "Layers of pasta, ricotta, mozzarella, and parmesan baked in a rich tomato sauce to perfection.",
+      "category": "Vegetarian",
+      "cuisine": "Italian",
+      "image": "resources/img/three-cheese-lasagna.jpg",
+      "ingredients": ["Ricotta", "Mozzarella", "Parmesan", "Tomato Sauce", "Pasta Sheets", "Basil"],
+      "price": "$16.49"
+    }
+  ]
+}
