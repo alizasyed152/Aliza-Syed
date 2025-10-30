@@ -5,7 +5,7 @@
       "description": "Tender grilled chicken tossed with fettuccine in a creamy Alfredo sauce, topped with sautéed mushrooms and fresh broccoli.",
       "category": "Non-Vegetarian",
       "cuisine": "Italian",
-      "image": "resources/img/broccoli-mushroom-alfredo.jpg",
+      "image": "resources/img/brococli-mushroom-alfredo.jpg",
       "ingredients": ["Chicken", "Fettuccine", "Parmesan", "Mushrooms", "Broccoli", "Cream", "Garlic"],
       "price": "$18.99"
     },

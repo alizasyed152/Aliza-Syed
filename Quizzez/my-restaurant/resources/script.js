@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON("resources/menu.json", function(data) {
+    $.getJSON("data/menu.json", function(data) {
         let menuItems = data.menu;
         let tableBody = "";
 
