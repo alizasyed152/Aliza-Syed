@@ -1,0 +1,233 @@
+/* =============================== */
+/*      COLOR VARIABLES            */
+/* =============================== */
+:root {
+    --space-indigo: #251f47;
+    --honeydew: #f1faee;
+    --air-force-blue: #7293a0;
+    --midnight-violet: #3a173a;
+    --strawberry-red: #e7363c;
+
+    --text-light: #ffffff;
+    --text-dark: #222;
+}
+
+/* =============================== */
+/*      GLOBAL PAGE STYLES         */
+/* =============================== */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--honeydew);
+    color: var(--space-indigo);
+}
+
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* =============================== */
+/*      HEADER + NAV               */
+/* =============================== */
+
+header {
+    background-color: var(--space-indigo);
+    padding: 20px;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    color: var(--honeydew);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--strawberry-red);
+}
+
+/* =============================== */
+/*      BUTTONS  (UPDATED)         */
+/* =============================== */
+
+.btn {
+    background-color: var(--strawberry-red); /* 🔴 red buttons restored */
+    color: var(--honeydew);
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background-color: #c42025; /* darker red hover */
+}
+
+/* =============================== */
+/*      HOME PAGE BUTTONS          */
+/* =============================== */
+
+.home-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.home-buttons .btn {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+}
+
+/* =============================== */
+/*      QUICK TIP BOX              */
+/* =============================== */
+
+.quick-tip {
+    background-color: var(--air-force-blue);
+    color: white;
+    padding: 15px 18px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-style: italic;
+    text-align: center;
+}
+
+/* =============================== */
+/*      FORMS (PROJECT + AUTH)     */
+/* =============================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--air-force-blue);
+    font-size: 15px;
+}
+
+label {
+    font-weight: 600;
+}
+
+/* =============================== */
+/* AUTH PAGES (LOGIN / REGISTER)  */
+/* =============================== */
+
+.auth-page {
+    background: linear-gradient(135deg, var(--space-indigo), var(--midnight-violet));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    background-color: var(--honeydew);
+    width: 380px;
+    padding: 35px 40px;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: var(--space-indigo);
+}
+
+.auth-container input {
+    width: 100%;
+}
+
+.register-link {
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: var(--strawberry-red);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* =============================== */
+/* ERROR & SUCCESS MESSAGES        */
+/* =============================== */
+
+.error {
+    color: var(--strawberry-red);
+    background-color: rgba(231, 54, 60, 0.15);
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.success {
+    color: green;
+    background-color: rgba(0, 255, 0, 0.15);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+/* =============================== */
+/* TABLES (VIEW PROJECTS)          */
+/* =============================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    border: 1px solid var(--air-force-blue);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--space-indigo);
+    color: white;
+}
+
+/* Bottom "Add Project" button wrapper */
+.add-project-bottom-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Highlight newly added project */
+.highlight {
+    background-color: var(--strawberry-red);
+    color: var(--honeydew);
+    font-weight: bold;
+    transition: 0.3s;
+}
